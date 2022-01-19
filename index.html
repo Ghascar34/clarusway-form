@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="result.html" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Clarusway Survey Form</title>
+  </head>
+  <body>
+    <div class="header">
+     <div class="title">
+      <h1 id="head">Clarusway Survey Form</h1>
+      <h3>Thank you for taking the time to help us improve the platform</h3>
+     </div>
+    </div>
+    <div class="container"><br /> <br>
+      <section class="input-section">
+        <form action="result.html">
+          <div class="name">
+            <label for="name">Name</label> <br>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              required
+              placeholder="Enter your name"
+            />
+            <br /><br />
+          </div>
+          <div class="surname">
+            <label for="surname">Surname</label> <br />
+            <input
+              type="text"
+              name="surname"
+              id="surname"
+              required
+              placeholder="Enter your Surname"
+            />
+            <br />
+            <br />
+          </div>
+          <div class="email">
+            <label for="email">Email</label> <br />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder="user@clarusway.com"
+            />
+            <br />
+          </div>
+          <div class="opt1">
+            <h3>Which option best describes your current role?</h3>
+            <select name="role" id="role">
+              Select current role
+              <option value="" id="role">Select current role</option>
+              <option value="role1">Role1</option>
+              <option value="role2">Role2</option>
+              <option value="role3">Role3</option>
+              <option value="role4">Role4</option>
+            </select>
+          </div>
+          <div class="recommend">
+            <h3>Would you recommend clarusway to a friend?</h3>
+            <input type="radio" checked name="recommend" id="yes" value="yes" />
+            <label for="yes">Definetly,Yes</label> <br />
+            <input type="radio" name="recommend" id="maybe" value="maybe" />
+            <label for="maybe">Maybe</label> <br />
+            <input type="radio" name="recommend" id="notsure" value="notsure" />
+            <label for="notsure">Not sure</label> <br />
+            <input type="radio" name="recommend" id="no" value="no" />
+            <label for="no">Definetly, No</label>
+          </div>
+          <div class="feature">
+            <h3>What is your favourite feature of Clarusway?</h3>
+            <select name="feature" id="feature">
+              <option value="">Select an option</option>
+              <option value="fullstack">Full Stack</option>
+              <option value="datascience">Data Science</option>
+              <option value="awsdevops">Aws Devops</option>
+              <option value="cybersecurity">Cyber Security</option>
+            </select>
+          </div>
+          <div class="improve">
+            <h3>What would you like to see improved?(Check all that apply)</h3>
+            <input type="checkbox" name="improve" id="front" />
+            <label for="front">Front-end Projects</label> <br />
+            <input type="checkbox" name="improve" id="back" />
+            <label for="back">Back-end Projects</label> <br />
+            <input type="checkbox" name="improve" id="data" />
+            <label for="data">Data Science</label> <br />
+            <input type="checkbox" name="improve" id="addition" />
+            <label for="addition">Addiotonal Courses</label> <br />
+          </div>
+          <div class="comment">
+            <h3>Any Comments or suggestions?</h3>
+            <textarea
+              name="comment"
+              id="comment"
+              cols="60"
+              rows="10"
+              placeholder="Enter your comment here... Thanks for your feedback"
+            ></textarea>
+          </div>
+          <div class="submit">
+              <input type="submit" id="form-button"value="Submit"> <br><br>
+          </div>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
